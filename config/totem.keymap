@@ -270,34 +270,6 @@
             layers = <2>;
         };
 
-        combo_lscrldn {
-            key-positions = <22 23 24>;
-            bindings = <&msc SCRL_DOWN>;
-            timeout-ms = <50>;
-            layers = <3>;
-        };
-
-        combo_rscrldn {
-            key-positions = <27 28 29>;
-            bindings = <&msc SCRL_DOWN>;
-            timeout-ms = <50>;
-            layers = <3>;
-        };
-
-        combo_lscrlup {
-            key-positions = <23 24 25>;
-            bindings = <&msc SCRL_UP>;
-            timeout-ms = <50>;
-            layers = <3>;
-        };
-
-        combo_rscrlup {
-            key-positions = <26 27 28>;
-            bindings = <&msc SCRL_UP>;
-            timeout-ms = <50>;
-            layers = <3>;
-        };
-
         combo_lfunclayer {
             key-positions = <33 34>;
             bindings = <&sl 9>;
@@ -373,10 +345,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U            &kp I        &kp O       &kp P
-       &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H      &mt LSHFT J      &mt LCTRL K  &mt RALT L  &mt LGUI SEMI
-&kp Z  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M            &kp COMMA    &kp DOT     &kp FSLH       &kp FSLH
-                               &lt 10 ESC   &lt 6 SPACE  &lt 6 TAB    &lt 3 DEL  &lt 9 BACKSPACE  &lt 3 RET
+             &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U            &kp I        &kp O       &kp P
+             &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H      &mt LSHFT J      &mt LCTRL K  &mt RALT L  &mt LGUI SEMI
+&key_repeat  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M            &kp COMMA    &kp DOT     &kp FSLH       &key_repeat
+                                     &lt 10 ESC   &lt 6 SPACE  &lt 7 TAB    &lt 8 DEL  &lt 9 BACKSPACE  &lt 3 RET
             >;
         };
 
@@ -399,8 +371,8 @@
             bindings = <
           &kp T      &kp Q  &kp W  &kp E      &kp R    &kp J      &kp L     &kp UP     &kp Y      &kp SEMI
           &kp LSHFT  &kp A  &kp S  &kp D      &kp F    &kp H      &kp LEFT  &kp DOWN   &kp RIGHT  &mt RGUI O
-&kp LALT  &kp LCTRL  &kp Z  &kp X  &kp C      &kp V    &kp K      &kp M     &kp COMMA  &kp DOT    &kp FSLH    &kp FSLH
-                            &mo 3  &kp SPACE  &mo 5    &lt 6 RET  &kp BSPC  &kp BSPC
+&kp LALT  &kp LCTRL  &kp Z  &kp X  &kp C      &kp V    &kp K      &kp M     &kp COMMA  &kp DOT    &kp FSLH    &mo 0
+                            &mo 3  &kp SPACE  &mo 5    &lt 6 RET  &kp BSPC  &kp ENTER
             >;
         };
 
@@ -424,7 +396,7 @@
        &kp P          &kp O       &kp I        &kp U            &kp Y        &kp T      &kp R        &kp E        &kp W       &kp Q
        &mt LGUI SEMI  &mt RALT L  &mt LCTRL K  &mt LSHFT J      &kp H        &kp G      &mt LSHFT F  &mt LCTRL D  &mt LALT S  &mt LGUI A
 &mo 4  &kp FSLH       &kp DOT     &kp COMMA    &kp M            &kp N        &kp B      &kp V        &kp C        &kp X       &kp Z       &mo 4
-                                  &lt 3 DEL    &lt 9 BACKSPACE  &lt 6 RET    &lt 6 TAB  &lt 6 SPACE  &lt 10 ESC
+                                  &lt 3 DEL    &lt 9 BACKSPACE  &lt 8 RET    &lt 7 TAB  &lt 6 SPACE  &lt 10 ESC
             >;
         };
 
@@ -445,10 +417,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LBKT   &kp N7  &kp N8    &kp N9     &kp RBKT     &kp INSERT  &kp PRINTSCREEN  &kp K_APP  &kp PAUSE_BREAK  &kp SYSREQ
-        &kp BSLH   &kp N4  &kp N5    &kp N6     &kp EQUAL    &kp LEFT    &kp DOWN         &kp UP     &kp RIGHT        &kp CAPSLOCK
-&trans  &kp GRAVE  &kp N1  &kp N2    &kp N3     &kp APOS     &kp END     &kp PG_DN        &kp PG_UP  &kp HOME         &kp SCROLLLOCK  &trans
-                           &lt 4 N0  &kp MINUS  &kp RET      &kp RET     &kp KP_N0        &kp CAPS
+        &kp LBKT   &kp N7  &kp N8              &kp N9     &kp RBKT        &kp INSERT  &kp PRINTSCREEN  &kp K_APP  &kp PAUSE_BREAK  &kp SYSREQ
+        &kp BSLH   &kp N4  &kp N5              &kp N6     &kp EQUAL       &kp LEFT    &kp DOWN         &kp UP     &kp RIGHT        &kp CAPSLOCK
+&trans  &kp GRAVE  &kp N1  &kp N2              &kp N3     &kp NUMBER_0    &kp END     &kp PG_DN        &kp PG_UP  &kp HOME         &kp SCROLLLOCK  &trans
+                           &lt 4 SINGLE_QUOTE  &kp MINUS  &kp RET         &kp RET     &kp N0           &kp CAPS
             >;
         };
 
@@ -469,17 +441,17 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset      &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader     &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &studio_unlock  &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                    &trans        &trans  &trans    &trans  &trans  &trans
+        &sys_reset      &bt BT_CLR  &bt BT_SEL 0  &trans        &trans    &trans  &trans        &bt BT_SEL 0  &bt BT_CLR  &sys_reset
+        &bootloader     &bt BT_NXT  &bt BT_SEL 1  &out OUT_TOG  &to 1     &to 1   &out OUT_TOG  &bt BT_SEL 1  &bt BT_NXT  &bootloader
+&trans  &studio_unlock  &bt BT_PRV  &bt BT_SEL 2  &trans        &to 0     &to 0   &trans        &bt BT_SEL 2  &bt BT_PRV  &studio_unlock  &trans
+                                    &trans        &trans        &trans    &trans  &trans        &trans
             >;
         };
 
         game+ {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "GAM2";
+            label = "GAME2";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -493,17 +465,17 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp O    &kp I      &kp U    &kp Y       &kp TAB    &kp J      &kp L        &kp U        &kp Y       &kp SEMI
-            &kp L    &kp K      &kp J    &kp H       &kp G      &kp H      &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
-&lt 6 BSLH  &kp DOT  &kp COMMA  &kp M    &kp N       &kp B      &kp K      &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp FSLH
-                                &lt 8 P  &lt 7 SEMI  &trans     &lt 6 RET  &kp BSPC     &kp BSPC
+            &kp O    &kp I      &kp U    &kp Y       &kp TAB    &kp J      &kp L     &kp UP_ARROW  &kp Y      &kp SEMI
+            &kp L    &kp K      &kp J    &kp H       &kp G      &kp H      &kp LEFT  &kp DOWN      &kp RIGHT  &mt RGUI O
+&lt 6 BSLH  &kp DOT  &kp COMMA  &kp M    &kp N       &kp B      &kp K      &kp M     &kp COMMA     &kp DOT    &kp FSLH    &kp FSLH
+                                &lt 8 P  &lt 7 SEMI  &trans     &lt 6 RET  &kp BSPC  &kp BSPC
             >;
         };
 
         nav_num {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NUM";
+            label = "NAV_NUM";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -517,17 +489,17 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp SYSREQ      &kp PAUSE_BREAK  &kp K_APP  &kp PRINTSCREEN  &kp INSERT    &kp LBKT   &kp N7        &kp N8        &kp N9       &kp RBKT
-        &mt LGUI CAPS   &kp LEFT         &kp UP     &kp DOWN         &kp RIGHT     &kp EQUAL  &mt LSHFT N4  &mt LCTRL N5  &mt RALT N6  &mt LGUI BSLH
-&trans  &kp SCROLLLOCK  &kp HOME         &kp PG_UP  &kp PAGE_DOWN    &kp END       &kp SQT    &kp N1        &kp N2        &kp N3       &kp GRAVE      &trans
-                                         &trans     &trans           &trans        &trans     &kp MINUS     &lt 4 N0
+        &kp SYSREQ      &kp PAUSE_BREAK  &kp K_APP  &kp PRINTSCREEN  &kp INSERT    &kp LBKT      &kp N7        &kp N8              &kp N9       &kp RBKT
+        &kp CLCK        &kp LEFT         &kp UP     &kp DOWN         &kp RIGHT     &kp EQUAL     &mt LSHFT N4  &mt LCTRL N5        &mt RALT N6  &mt LGUI BSLH
+&trans  &kp SCROLLLOCK  &kp HOME         &kp PG_UP  &kp PAGE_DOWN    &kp END       &kp NUMBER_0  &kp N1        &kp N2              &kp N3       &kp GRAVE      &trans
+                                         &trans     &trans           &trans        &trans        &kp MINUS     &lt 4 SINGLE_QUOTE
             >;
         };
 
         function_numpad {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "FUNC";
+            label = "FUNC_NUMP";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -541,17 +513,17 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOL_UP    &kp KP_NUM       &kp KP_N7        &kp KP_N8        &kp KP_NUMBER_9  &kp KP_MINUS
-        &kp F11  &kp F4  &kp F5  &kp F6  &kp K_MUTE      &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp C_VOL_DN    &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &trans
-                         &trans  &trans  &trans          &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_NUMBER_0
+        &kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOL_UP    &kp KP_SLASH     &kp KP_N7        &kp KP_N8        &kp KP_NUMBER_9  &kp KP_MINUS
+        &kp F11  &kp F4  &kp F5  &kp F6  &kp K_MUTE      &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp C_VOL_DN    &kp KP_N0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &trans
+                         &trans  &trans  &trans          &kp KP_NUMBER_0  &kp KP_NUMLOCK   &kp KP_NUMLOCK
             >;
         };
 
         numpad_function {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NUMP";
+            label = "NUMP_FUNC";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -565,31 +537,33 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp KP_NUMLOCK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS       &kp C_VOL_UP       &kp F7           &kp F8  &kp F9  &kp F12
-        &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS        &kp K_MUTE         &kp F4           &kp F5  &kp F6  &kp F11
-&trans  &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT         &kp C_VOLUME_DOWN  &kp F1           &kp F2  &kp F3  &kp F10  &trans
-                                          &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_NUMBER_0    &kp KP_NUMBER_0    &kp KP_NUMBER_0  &trans
+        &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS      &kp C_VOL_UP       &kp F7           &kp F8  &kp F9  &kp F12
+        &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS       &kp K_MUTE         &kp F4           &kp F5  &kp F6  &kp F11
+&trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT        &kp C_VOLUME_DOWN  &kp F1           &kp F2  &kp F3  &kp F10  &trans
+                                          &kp KP_NUMLOCK   &kp KP_NUMLOCK   &kp KP_NUMLOCK    &kp KP_NUMBER_0    &kp KP_NUMBER_0  &trans
             >;
         };
 
         sym_mouse {
             bindings = <
-        &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTRK              &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-        &kp PIPE        &kp DOLLAR       &kp PERCENT            &kp CARET             &kp PLUS             &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN            &kp POUND             &kp DOUBLE_QUOTES    &mkp MB4        &mkp MB1        &mkp MB2      &mkp MB3         &mkp MB5  &trans
-                                         &kp RIGHT_PARENTHESIS  &kp UNDERSCORE        &trans               &trans          &mo 4          &trans
+        &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTRK          &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+        &kp PIPE        &kp DOLLAR       &kp PERCENT        &kp CARET             &kp PLUS                 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN        &kp POUND             &kp RIGHT_PARENTHESIS    &mkp MB4        &mkp MB1        &mkp MB2      &mkp MB3         &mkp MB5  &trans
+                                         &kp DOUBLE_QUOTES  &kp UNDERSCORE        &trans                   &trans          &mo 4           &trans
             >;
 
-            label = "sym";
+            label = "SYM_MOU";
         };
 
         mouse_sym {
             bindings = <
-        &trans    &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &kp LEFT_BRACE     &kp AMPERSAND    &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE
-        &trans    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp PLUS           &kp DOLLAR       &kp PERCENT            &kp CARET             &kp PIPE
-&trans  &mkp MB4  &mkp MB3        &mkp MB2      &mkp MB1        &mkp MB5           &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp AT_SIGN            &kp POUND             &kp TILDE        &trans
-      &trans        &mo 4           &trans             &trans             &kp UNDERSCORE   &kp RIGHT_PARENTHESIS
+        &trans    &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &kp LEFT_BRACE         &kp AMPERSAND    &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE
+        &trans    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp PLUS               &kp DOLLAR       &kp PERCENT        &kp CARET             &kp PIPE
+&trans  &mkp MB4  &mkp MB3        &mkp MB2      &mkp MB1        &mkp MB5           &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN        &kp POUND             &kp TILDE        &trans
+                                  &trans        &mo 4           &trans             &trans                 &kp UNDERSCORE   &kp DOUBLE_QUOTES
             >;
+
+            label = "MOU_SYM";
         };
     };
 };
