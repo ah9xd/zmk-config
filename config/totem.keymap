@@ -298,6 +298,22 @@
             layers = <0 3 4 6 7>;
         };
 
+        game_b {
+            bindings = <&kp B>;
+            key-positions = <25 14>;
+            timeout-ms = <5>;
+            slow-release;
+            layers = <1>;
+        };
+
+        game_g {
+            bindings = <&kp G>;
+            key-positions = <14 4>;
+            timeout-ms = <5>;
+            slow-release;
+            layers = <1>;
+        };
+
         //combo_gamealt {
         //    key-positions = <33 34>;
         //    bindings = <&kp LALT>;
@@ -417,8 +433,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LBKT   &kp N7  &kp N8              &kp N9     &kp RBKT        &kp INSERT  &kp PRINTSCREEN  &kp K_APP  &kp PAUSE_BREAK  &kp SYSREQ
-        &kp BSLH   &kp N4  &kp N5              &kp N6     &kp EQUAL       &kp LEFT    &kp DOWN         &kp UP     &kp RIGHT        &kp CAPSLOCK
+        &kp LBKT   &kp N7  &kp N8              &kp N9     &kp RBKT        &kp INSERT  &kp PRINTSCREEN  &kp K_APP  &kp PAUSE_BREAK  &kp CAPSLOCK
+        &kp BSLH   &kp N4  &kp N5              &kp N6     &kp EQUAL       &kp LEFT    &kp DOWN         &kp UP     &kp RIGHT        &kp SYSREQ
 &trans  &kp GRAVE  &kp N1  &kp N2              &kp N3     &kp NUMBER_0    &kp END     &kp PG_DN        &kp PG_UP  &kp HOME         &kp SCROLLLOCK  &trans
                            &lt 4 SINGLE_QUOTE  &kp MINUS  &kp RET         &kp RET     &kp N0           &kp CAPS
             >;
@@ -489,8 +505,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp SYSREQ      &kp PAUSE_BREAK  &kp K_APP  &kp PRINTSCREEN  &kp INSERT    &kp LBKT      &kp N7        &kp N8              &kp N9       &kp RBKT
-        &kp CLCK        &kp LEFT         &kp UP     &kp DOWN         &kp RIGHT     &kp EQUAL     &mt LSHFT N4  &mt LCTRL N5        &mt RALT N6  &mt LGUI BSLH
+        &kp CAPS        &kp PAUSE_BREAK  &kp K_APP  &kp PRINTSCREEN  &kp INSERT    &kp LBKT      &kp N7        &kp N8              &kp N9       &kp RBKT
+        &kp SYSREQ      &kp LEFT         &kp UP     &kp DOWN         &kp RIGHT     &kp EQUAL     &mt LSHFT N4  &mt LCTRL N5        &mt RALT N6  &mt LGUI BSLH
 &trans  &kp SCROLLLOCK  &kp HOME         &kp PG_UP  &kp PAGE_DOWN    &kp END       &kp NUMBER_0  &kp N1        &kp N2              &kp N3       &kp GRAVE      &trans
                                          &trans     &trans           &trans        &trans        &kp MINUS     &lt 4 SINGLE_QUOTE
             >;
@@ -547,9 +563,9 @@
         sym_mouse {
             bindings = <
         &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTRK          &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-        &kp PIPE        &kp DOLLAR       &kp PERCENT        &kp CARET             &kp PLUS                 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+        &kp PIPE        &kp DOLLAR       &kp PERCENT        &kp CARET             &kp PLUS                 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB1
 &trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN        &kp POUND             &kp RIGHT_PARENTHESIS    &mkp MB4        &mkp MB1        &mkp MB2      &mkp MB3         &mkp MB5  &trans
-                                         &kp DOUBLE_QUOTES  &kp UNDERSCORE        &trans                   &trans          &mo 4           &trans
+                                         &kp DOUBLE_QUOTES  &kp UNDERSCORE        &trans                   &trans          &mo 4           &tog 9
             >;
 
             label = "SYM_MOU";
@@ -558,7 +574,7 @@
         mouse_sym {
             bindings = <
         &trans    &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &kp LEFT_BRACE         &kp AMPERSAND    &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE
-        &trans    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp PLUS               &kp DOLLAR       &kp PERCENT        &kp CARET             &kp PIPE
+        &mkp MB1  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp PLUS               &kp DOLLAR       &kp PERCENT        &kp CARET             &kp PIPE
 &trans  &mkp MB4  &mkp MB3        &mkp MB2      &mkp MB1        &mkp MB5           &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN        &kp POUND             &kp TILDE        &trans
                                   &trans        &mo 4           &trans             &trans                 &kp UNDERSCORE   &kp DOUBLE_QUOTES
             >;
