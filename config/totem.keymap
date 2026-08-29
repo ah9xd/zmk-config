@@ -481,10 +481,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp O    &kp I      &kp U    &kp Y       &kp TAB    &kp J      &kp L     &kp UP_ARROW  &kp Y      &kp SEMI
-            &kp L    &kp K      &kp J    &kp H       &kp G      &kp H      &kp LEFT  &kp DOWN      &kp RIGHT  &mt RGUI O
-&lt 6 BSLH  &kp DOT  &kp COMMA  &kp M    &kp N       &kp B      &kp K      &kp M     &kp COMMA     &kp DOT    &kp FSLH    &kp FSLH
-                                &lt 8 P  &lt 7 SEMI  &trans     &lt 6 RET  &kp BSPC  &kp BSPC
+             &kp O    &kp I      &kp U    &kp Y       &kp TAB    &kp J      &kp L     &kp UP_ARROW  &kp Y      &kp SEMI
+             &kp L    &kp K      &kp J    &kp H       &kp G      &kp H      &kp LEFT  &kp DOWN      &kp RIGHT  &mt RGUI O
+&lt 6 SLASH  &kp DOT  &kp COMMA  &kp M    &kp N       &kp B      &kp K      &kp M     &kp COMMA     &kp DOT    &kp FSLH    &kp FSLH
+                                 &lt 8 P  &lt 7 SEMI  &trans     &lt 6 RET  &kp BSPC  &kp BSPC
             >;
         };
 
